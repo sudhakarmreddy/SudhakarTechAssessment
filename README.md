@@ -9,7 +9,7 @@ o	Cucumber Plugin
 
 
 **Framework Architecture**
-![ScreenShot](screenshot.jpg)
+![ScreenShot](Diagram.jpg)
 
 
 **Steps to Execute Testcases:**
