@@ -1,0 +1,6 @@
+stepdefinitions\CoreProductSteps.class
+stepdefinitions\Hooks.class
+pageobject\NewsAndFeaturesPage.class
+pageobject\ShopMensPage.class
+pageobject\CoreProductPage.class
+testrunner\CoreProductCucumberTest.class

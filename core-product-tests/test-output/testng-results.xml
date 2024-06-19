@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-15T17:30:27 IST" name="Default suite" finished-at="2024-06-15T17:30:28 IST" duration-ms="515">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.RunCucumberTest@2d901eb0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-06-15T17:30:27 IST" name="Default test" finished-at="2024-06-15T17:30:28 IST" duration-ms="515">
+      <class name="testrunner.RunCucumberTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.RunCucumberTest@2d901eb0]" started-at="2024-06-15T17:30:27 IST" name="setUpClass" finished-at="2024-06-15T17:30:28 IST" duration-ms="381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3153ddfc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.RunCucumberTest@2d901eb0]" started-at="2024-06-15T17:30:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-15T17:30:28 IST" duration-ms="48" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LoginValidCredentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to HRM Application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at utils.SeleniumUtilities.loadPage(SeleniumUtilities.java:37)
+at stepdefinitions.HRMLogin.loginToHRMApp(HRMLogin.java:21)
+at ✽.User login to HRM application with UserName and Password(file:///C:/Veeva1/SudhakarTechAssessment/core-product-tests/src/test/resources/features/HRMLogin.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.RunCucumberTest@2d901eb0]" started-at="2024-06-15T17:30:28 IST" name="tearDownClass" finished-at="2024-06-15T17:30:28 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner.RunCucumberTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

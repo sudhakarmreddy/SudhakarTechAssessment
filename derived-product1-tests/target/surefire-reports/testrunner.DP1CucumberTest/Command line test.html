@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 16 19:15:40 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>196 seconds (196634 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testrunner.DP1CucumberTest.runScenario()'><b>runScenario</b><br>Test class: testrunner.DP1CucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check number of slides and duration of each slide on DP1 Home Page", "Validate slides DP1 Home Page"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null
+	at stepdefinitions.DP1Steps.validate_slide_titles_with_testdata(DP1Steps.java:106)
+	at ?.Validate slide titles and duration with testdata(file:///C:/Veeva1/SudhakarTechAssessment/derived-product1-tests/src/test/resources/features/DP1.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace178658894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace178658894'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null
+	at stepdefinitions.DP1Steps.validate_slide_titles_with_testdata(DP1Steps.java:106)
+	at ?.Validate slide titles and duration with testdata(file:///C:/Veeva1/SudhakarTechAssessment/derived-product1-tests/src/test/resources/features/DP1.feature:8)
+</pre></div></td>
+<td>196</td>
+<td>testrunner.DP1CucumberTest@2d2ffcb7</td></tr>
+</table><p>
+</body>
+</html>
